@@ -28,7 +28,7 @@ function escanearDirectorioRecursivamente(directorio) {
                 } else {
                     // Si es un archivo HTML, imprimir su nombre
                     if (path.extname(nombreArchivo) === '.html') {
-                        //invertirNavegacion('.\\'+rutaArchivo);
+                        invertirNavegacion('.\\'+rutaArchivo);
                         replaceDomain('.\\'+rutaArchivo, palabraBuscar1, palabraReemplazar1);
                         replaceDomain('.\\'+rutaArchivo, palabraBuscar2, palabraReemplazar2);
                     }
