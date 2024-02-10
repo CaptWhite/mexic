@@ -70,7 +70,7 @@ function invertirNavegacion(filePath) {
         // Modificar el contenido como desees
         // Expresión regular con un grupo de captura para la fecha
             const rs = regex.exec(data);
-            newData = rs[1] + rs[9] + rs[3] + rs[11] + rs[5] + rs[13] + rs[6] + rs[7] + rs[8] + rs[2] + rs[10] + rs[4] + rs[12] + rs[6] + rs[14]
+            newData = rs[1] + rs[9] + rs[3] + rs[11] + rs[5] + rs[13] + rs[7] + rs[8] + rs[2] + rs[10] + rs[4] + rs[12] + rs[6] + rs[14]
             console.log('2.- ' + filePath)
         } else {
             newData = data
