@@ -9,7 +9,7 @@ export function replaceDomain(filePath) {
         const cadenaOriginal = data;
         const regex = new RegExp(palabraBuscar, 'gs');
         const cadenaReemplazada = cadenaOriginal.replace(regex, palabraReemplazar);
-        if (cadenaOriginal != cadenaReemplazada)   console.log(filePath)
+
         // Grabar el contenido modificado de vuelta al archivo
         fs.writeFileSync(filePath, cadenaReemplazada, {encoding: "utf8"})
         //console.log('El archivo ha sido modificado exitosamente.'  + filePath);
