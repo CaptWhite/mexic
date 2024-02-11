@@ -4,10 +4,10 @@ import {insertarDivisa} from './postDivisa.js'
 import { ejecutarGit} from './postGit.js'
 import { directorioRaiz, directorioOrigen, directorioDestino } from "./postConstants.js"
 
-const actions = {isInvertirNavegacion:  true, 
-                 isReplaceDomain:       true, 
-                 isCopiarDirectorio:    true, 
-                 isCambioDivisa:        true, 
+const actions = {isInvertirNavegacion:  false, 
+                 isReplaceDomain:       false, 
+                 isCopiarDirectorio:    false, 
+                 isCambioDivisa:        false, 
                  isGit:                 true}
 
 // escanear recursivamente un directorio
