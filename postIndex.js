@@ -1,9 +1,14 @@
 import {escanearDirectorioRecursivamente} from './postDirectory.js'
 import {copiarDirectorioRecursivo} from './postCopy.js'
 import {insertarDivisa} from './postDivisa.js'
+import { ejecutarGit} from './postGit.js'
 import { directorioRaiz, directorioOrigen, directorioDestino } from "./postConstants.js"
 
-const actions = {isInvertirNavegacion: false, isReplaceDomain: true, isCopiarDirectorio: false, isCambioDivisa: false}
+const actions = {isInvertirNavegacion:  false, 
+                 isReplaceDomain:       false, 
+                 isCopiarDirectorio:    false, 
+                 isCambioDivisa:        false, 
+                 isGit:                 true}
 
 // escanear recursivamente un directorio
 if (actions.isInvertirNavegacion || actions.isReplaceDomain)
@@ -14,3 +19,6 @@ if (actions.isCopiarDirectorio)
 
 if (actions.isCambioDivisa)
     insertarDivisa()
+
+if (actions.isGit)
+    ejecutarGit("Primera versión enviada al grupo")
