@@ -150,7 +150,7 @@ let palabraReemplazar2 = "https://upload.wikimedia";
 //palabraBuscar2 = "https://captwhite.github.io/mexic/wp-content/uploads";
 //palabraReemplazar2 = "https://captwhite.github.io/mexic/wp-content/uploads/xxxxx";
 
-// Llamar a la función para escanear recursivamente un directorio
+// escanear recursivamente un directorio
 const directorioRaiz = './';
 escanearDirectorioRecursivamente(directorioRaiz);
 
