@@ -4,7 +4,7 @@ import { execSync } from 'child_process';
 export function ejecutarGit(message) {
     try {
     // Ejecuta el comando del sistema operativo de forma sincrónica
-    resultado = execSync(`postGitCommand.bat "${message}"`); // Cambia 'ls -l' por el comando que desees ejecutar
+    const resultado = execSync(`postGitCommand.bat "${message}"`); // Cambia 'ls -l' por el comando que desees ejecutar
                         
     console.log(resultado.toString());
 
