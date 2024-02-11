@@ -4,7 +4,7 @@ import {insertarDivisa} from './postDivisa.js'
 import { ejecutarGit} from './postGit.js'
 import { directorioRaiz, directorioOrigen, directorioDestino } from "./postConstants.js"
 
-const actions = {isInvertirNavegacion:  false, 
+const actions = {isInvertirNavegacion:  true, 
                  isReplaceDomain:       false, 
                  isCopiarDirectorio:    false, 
                  isCambioDivisa:        false, 
