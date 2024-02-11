@@ -7,6 +7,7 @@ export function ejecutarGit(message) {
     const resultado = execSync('git add .'); // Cambia 'ls -l' por el comando que desees ejecutar
     console.log(resultado.toString());
     resultado = execSync(`git commit -m "${message}"`); // Cambia 'ls -l' por el comando que desees ejecutar
+                        
     console.log(resultado.toString());
     resultado = execSync(`git push`); // Cambia 'ls -l' por el comando que desees ejecutar
     console.log(resultado.toString());
