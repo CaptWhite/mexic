@@ -14,6 +14,8 @@ export function invertirNavegacion(filePath) {
             const regexIniFin = /(.*<nav class="navigation post-navigation" role="navigation" aria-label="Navegación de entradas">)(.*)(<\/nav>.*)/gs;
             const rs = regexIniFin.exec(data);
             newData = rs[1] + firstDay + rs[3]
+            console.log(filePath)
+            console.log(newData)
         } else if (!data.includes(" Anterior") && data.includes("Siguiente ")) {
             const regexIniFin = /(.*<nav class="navigation post-navigation" role="navigation" aria-label="Navegación de entradas">)(.*)(<\/nav>.*)/gs;
             const rs = regexIniFin.exec(data);
@@ -27,6 +29,6 @@ export function invertirNavegacion(filePath) {
         }
     
         // Grabar el contenido modificado de vuelta al archivo
-        fs.writeFileSync(filePath, newData, {encoding: "utf8"})         
+        //fs.writeFileSync(filePath, newData, {encoding: "utf8"})         
     ;
 }
