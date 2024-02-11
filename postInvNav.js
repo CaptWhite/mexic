@@ -29,6 +29,7 @@ export function invertirNavegacion(filePath) {
         }
     
         // Grabar el contenido modificado de vuelta al archivo
-        //fs.writeFileSync(filePath, newData, {encoding: "utf8"})         
+        fs.writeFileSync(filePath, newData, {encoding: "utf8"})   
+            
     ;
 }
