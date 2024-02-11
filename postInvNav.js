@@ -1,5 +1,6 @@
 import * as fs from 'fs';
-import { regex, regexIniFin,  firstDay, lastDay } from "./postConstants.js"
+import { firstDay, lastDay } from "./postConstants.js"
+
 
 export function invertirNavegacion(filePath) {
     if (filePath.includes('blog')) return
@@ -10,9 +11,11 @@ export function invertirNavegacion(filePath) {
         let newData = ""
 
         if (!data.includes("Siguiente ") && data.includes(" Anterior")) {
+            const regexIniFin = /(.*<nav class="navigation post-navigation" role="navigation" aria-label="Navegación de entradas">)(.*)(<\/nav>.*)/gs;
             const rs = regexIniFin.exec(data);
             newData = rs[1] + firstDay + rs[3]
         } else if (!data.includes(" Anterior") && data.includes("Siguiente ")) {
+            const regexIniFin = /(.*<nav class="navigation post-navigation" role="navigation" aria-label="Navegación de entradas">)(.*)(<\/nav>.*)/gs;
             const rs = regexIniFin.exec(data);
             newData = rs[1] + lastDay + rs[3]
         } else if ( (data.includes("Siguiente ") && data.includes(" Anterior"))) {

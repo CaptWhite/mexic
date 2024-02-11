@@ -2,9 +2,6 @@
 export const directorioRaiz = './';
 
 // Invertir Navegación
-export const regex = /(.*<div class="nav-links".*<div class="nav-previous"><a title=")(.*)(".*href=")(.*)(".*rel.*<p>)(.*)(<\/p>)(.*<div class="nav-next"><a title=")(.*)(".*href=")(.*)(".*rel.*<p>)(.*)(<\/p>.*<\/a>.*<\/div>.*)/gs;
-export const regexIniFin = /(.*<nav class="navigation post-navigation" role="navigation" aria-label="Navegación de entradas">)(.*)(<\/nav>.*)/gs;
-
 export const firstDay = `<span class="screen-reader-text">Navegación de entradas</span>
 <div class="nav-links"><div class="nav-next"><a title="26 de marzo - La Paz" href="../25-de-marzo/index.html" rel="next"><span class="ast-post-nav">Siguiente <span class="ahfb-svg-iconset ast-inline-flex svg-baseline"><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 448 512'><path d='M313.941 216H12c-6.627 0-12 5.373-12 12v56c0 6.627 5.373 12 12 12h301.941v46.059c0 21.382 25.851 32.09 40.971 16.971l86.059-86.059c9.373-9.373 9.373-24.569 0-33.941l-86.059-86.059c-15.119-15.119-40.971-4.411-40.971 16.971V216z'></path></svg></span></span> <p> 26 de marzo &#8211; La Paz  </p></a></div></div>`
 
