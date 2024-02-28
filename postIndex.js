@@ -18,15 +18,15 @@ if (actions.isInvertirNavegacion || actions.isReplaceDomain) {
 
 if (actions.isCopiarDirectorio)  {  
     copiarDirectorioRecursivo(directorioOrigen, directorioDestino)
-    console.log(`copiarDirectorioRecursivo - isCopiarDirectorio:${actions.isCopiarDirectorio}`)
+    console.log(`Fin de copiarDirectorioRecursivo - isCopiarDirectorio:${actions.isCopiarDirectorio}`)
 }
 
 if (actions.isCambioDivisa){
     insertarDivisa()
-    console.log(`insertarDivisa - isCambioDivisa:${actions.isCambioDivisa}`)
+    console.log(`Fin de insertarDivisa - isCambioDivisa:${actions.isCambioDivisa}`)
 }
 
 if (actions.isGit){
     ejecutarGit("Primera version enviada al grupo")
-    console.log(`ejecutarGit - isGit:${actions.isGit}`)
+    console.log(`Fin de ejecutarGit - isGit:${actions.isGit}`)
 }
